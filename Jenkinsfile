@@ -1,7 +1,6 @@
-def pipelineContext = [:]
 node {
 
-   def registryProjet='quenec/'
+   def registryProjet='mwaliddocker/'
    def IMAGE="${registryProjet}apache:versionJenkins-${env.BUILD_ID}"
 
     stage('Clone') {
